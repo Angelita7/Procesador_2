@@ -31,10 +31,15 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MEMORIAINSTRUCCION.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MEMORIAINSTRUCCION.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="MEMORIAINSTRUCCION.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MI_testBench_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MI_testBench_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MI_testBench_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MI_testBench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_TestBench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX_TestBench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MUX_TestBench_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_TestBench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplexor.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplexor.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Multiplexor.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Pc.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Pc.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Pc.xst"/>
@@ -67,13 +72,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
     </transform>
-    <transform xil_pn:end_ts="1507493617" xil_pn:in_ck="-8408084880273509109" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1507493617">
+    <transform xil_pn:end_ts="1507509056" xil_pn:in_ck="-7512067040636531863" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1507509056">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.vhd"/>
       <outfile xil_pn:name="ALU_testBench.vhd"/>
       <outfile xil_pn:name="MI_testBench.vhd"/>
+      <outfile xil_pn:name="MUX_TestBench.vhd"/>
       <outfile xil_pn:name="Memoria_instrucciones.vhd"/>
+      <outfile xil_pn:name="Multiplexor.vhd"/>
       <outfile xil_pn:name="Pc.vhd"/>
       <outfile xil_pn:name="Pc_testBench.vhd"/>
       <outfile xil_pn:name="RF_testBench.vhd"/>
@@ -83,11 +90,11 @@
       <outfile xil_pn:name="UC_testBench.vhd"/>
       <outfile xil_pn:name="Unidad_Control.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1507493963" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4608185580128284747" xil_pn:start_ts="1507493963">
+    <transform xil_pn:end_ts="1507508580" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-993354332610548049" xil_pn:start_ts="1507508580">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1507493963" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1713373472367652083" xil_pn:start_ts="1507493963">
+    <transform xil_pn:end_ts="1507508580" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3823920331850891889" xil_pn:start_ts="1507508580">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -95,13 +102,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1507493622" xil_pn:in_ck="-8408084880273509109" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1507493622">
+    <transform xil_pn:end_ts="1507509065" xil_pn:in_ck="-7512067040636531863" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1507509065">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.vhd"/>
       <outfile xil_pn:name="ALU_testBench.vhd"/>
       <outfile xil_pn:name="MI_testBench.vhd"/>
+      <outfile xil_pn:name="MUX_TestBench.vhd"/>
       <outfile xil_pn:name="Memoria_instrucciones.vhd"/>
+      <outfile xil_pn:name="Multiplexor.vhd"/>
       <outfile xil_pn:name="Pc.vhd"/>
       <outfile xil_pn:name="Pc_testBench.vhd"/>
       <outfile xil_pn:name="RF_testBench.vhd"/>
@@ -111,20 +120,20 @@
       <outfile xil_pn:name="UC_testBench.vhd"/>
       <outfile xil_pn:name="Unidad_Control.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1507493968" xil_pn:in_ck="-8408084880273509109" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5606304435135600808" xil_pn:start_ts="1507493963">
+    <transform xil_pn:end_ts="1507509068" xil_pn:in_ck="-7512067040636531863" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2821055633044352896" xil_pn:start_ts="1507509065">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="MI_testBench_beh.prj"/>
-      <outfile xil_pn:name="MI_testBench_isim_beh.exe"/>
+      <outfile xil_pn:name="MUX_TestBench_beh.prj"/>
+      <outfile xil_pn:name="MUX_TestBench_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1507493968" xil_pn:in_ck="6725830243748133513" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4197279055802230277" xil_pn:start_ts="1507493968">
+    <transform xil_pn:end_ts="1507509069" xil_pn:in_ck="9202815028906590257" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4110907057587226227" xil_pn:start_ts="1507509068">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="MI_testBench_isim_beh.wdb"/>
+      <outfile xil_pn:name="MUX_TestBench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
