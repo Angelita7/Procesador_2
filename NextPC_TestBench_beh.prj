@@ -1,0 +1,2 @@
+vhdl work "Next_PC.vhd"
+vhdl work "NextPC_TestBench.vhd"
