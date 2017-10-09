@@ -22,7 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Procesador_2.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
@@ -48,6 +48,21 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register_File.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Register_File.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Register_File.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SEU.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SEU.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SEU.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SEU.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SEU.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SEU.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SEU.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SEU.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SEU_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SEU_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SEU_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Seu_TestBench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Seu_TestBench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Seu_TestBench_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Seu_TestBench_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sumador.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Sumador.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Sumador.xst"/>
@@ -63,6 +78,7 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -71,8 +87,9 @@
     <transform xil_pn:end_ts="1507491505" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1507491505">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1507509056" xil_pn:in_ck="-7512067040636531863" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1507509056">
+    <transform xil_pn:end_ts="1507524320" xil_pn:in_ck="1714927791184390114" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1507524319">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.vhd"/>
@@ -85,24 +102,26 @@
       <outfile xil_pn:name="Pc_testBench.vhd"/>
       <outfile xil_pn:name="RF_testBench.vhd"/>
       <outfile xil_pn:name="Register_File.vhd"/>
+      <outfile xil_pn:name="SEU.vhd"/>
+      <outfile xil_pn:name="Seu_TestBench.vhd"/>
       <outfile xil_pn:name="Sumador.vhd"/>
       <outfile xil_pn:name="Sumador_TestBench.vhd"/>
       <outfile xil_pn:name="UC_testBench.vhd"/>
       <outfile xil_pn:name="Unidad_Control.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1507508580" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-993354332610548049" xil_pn:start_ts="1507508580">
+    <transform xil_pn:end_ts="1507524112" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2583805308555459298" xil_pn:start_ts="1507524112">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1507508580" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3823920331850891889" xil_pn:start_ts="1507508580">
+    <transform xil_pn:end_ts="1507524112" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7209641867125419364" xil_pn:start_ts="1507524112">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1507491930" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="87412747793717230" xil_pn:start_ts="1507491930">
+    <transform xil_pn:end_ts="1507523960" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6433562534971214752" xil_pn:start_ts="1507523960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1507509065" xil_pn:in_ck="-7512067040636531863" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1507509065">
+    <transform xil_pn:end_ts="1507524324" xil_pn:in_ck="1714927791184390114" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1507524323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.vhd"/>
@@ -115,27 +134,33 @@
       <outfile xil_pn:name="Pc_testBench.vhd"/>
       <outfile xil_pn:name="RF_testBench.vhd"/>
       <outfile xil_pn:name="Register_File.vhd"/>
+      <outfile xil_pn:name="SEU.vhd"/>
+      <outfile xil_pn:name="Seu_TestBench.vhd"/>
       <outfile xil_pn:name="Sumador.vhd"/>
       <outfile xil_pn:name="Sumador_TestBench.vhd"/>
       <outfile xil_pn:name="UC_testBench.vhd"/>
       <outfile xil_pn:name="Unidad_Control.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1507509068" xil_pn:in_ck="-7512067040636531863" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2821055633044352896" xil_pn:start_ts="1507509065">
+    <transform xil_pn:end_ts="1507524329" xil_pn:in_ck="1714927791184390114" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1902734350897683238" xil_pn:start_ts="1507524324">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="MUX_TestBench_beh.prj"/>
-      <outfile xil_pn:name="MUX_TestBench_isim_beh.exe"/>
+      <outfile xil_pn:name="Seu_TestBench_beh.prj"/>
+      <outfile xil_pn:name="Seu_TestBench_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1507509069" xil_pn:in_ck="9202815028906590257" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4110907057587226227" xil_pn:start_ts="1507509068">
+    <transform xil_pn:end_ts="1507524329" xil_pn:in_ck="-8567445280364828852" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3835457634634752851" xil_pn:start_ts="1507524329">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="MUX_TestBench_isim_beh.wdb"/>
+      <outfile xil_pn:name="Seu_TestBench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1507523892" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1507523892">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 
